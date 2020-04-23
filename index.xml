@@ -20,7 +20,9 @@
         </b:if>
 
         <meta content="Programas, Anime, Peliculas, Tutoriales, Mega, Mediafire" name="keywords" />
-        <meta content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no" name="viewport" />
+        <!-- <meta content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no" name="viewport" /> -->
+
+        <!-- <link href="https:////cdn.jsdelivr.net/gh/dmhendricks/bootstrap-grid-css@4.1.3/dist/css/bootstrap-grid.min.css" rel="stylesheet" /> -->
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css" rel="stylesheet" />
@@ -113,13 +115,17 @@
         </b:if>
 
         <!--ALERTS JQ -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
 
         <b:skin>
             <![CDATA[*/
+            html {
+                scroll-behavior: smooth;
+            }
+
             p,label,span,h1,h2,h3,h4,h5,h6,a {
                 font-family: 'Roboto', sans-serif;
             }
@@ -325,35 +331,35 @@
 
             /* TODOS LOS ICONOS */
             .t-icon {
-                background-image: url("https://3.bp.blogspot.com/-uu4UctQJ_Fg/U8H3-4u8l_I/AAAAAAAAAWk/_pa3UjRhc3I/s1600/t-icons.png");
+                background-image: url("https://1.bp.blogspot.com/-1C7WF_50rFk/XqEsQL7Dt8I/AAAAAAAA5Dk/RNLZDojIuNYdFSz394NDJ-XcbR2YYONggCLcBGAsYHQ/s1600/t-icons.png");
                 background-repeat: no-repeat;
                 background-color: transparent;
                 display: block;
                 height: 16px;
-                width: 17px;
+                width: 16px;
             }
             .t-item .t-icon {float: left;margin-right: 10px;}
 
             /* TOOLS */
             .t-icon.home {background-position: -152px -119px;margin: 3px 0 2px;}
-            .t-icon.blog {background-image: url("https://1.bp.blogspot.com/-kyDwnx5zMqs/V_XMM0ImWtI/AAAAAAAAGmY/sCM3D-zBXQYVOedpsGUc1NlSykQNImvZACK4B/s1600/RANGO.png");}
+            .t-icon.blog {background-position: -239px -68px;}
 
             /* POSTS */ 
-            .t-icon.sticky {background-image: url("https://3.bp.blogspot.com/-kH-mOneJNsA/WeaSJUaMKjI/AAAAAAAAG8c/osJW_dJSIr4z7TlCQtODf30bmDSXxlP6ACLcBGAs/s1600/Sticky.png");}
+            .t-icon.sticky {background-position: -222px -52px;}
 
-            .t-icon.Mega {background-image: url("https://3.bp.blogspot.com/-vz0XNlJj1Hw/V_XCylV9ElI/AAAAAAAAGls/hpCWrlpRSiMHunBBiGeNeSa0pxyTS_OcACK4B/s1600/MEGA.png");}
-            .t-icon.Mediafire {background-image: url("https://4.bp.blogspot.com/-Et0T-JgiTUw/Xbcnk7NLncI/AAAAAAAAHeY/V5l0LtHu7ksaUDqLApeJKpDhYXJtP8unACK4BGAYYCw/s1600/Mediafire.png");}
-            .t-icon.GD {background-image: url("https://1.bp.blogspot.com/-qGKkD0aOIDU/Xbcptp-JEqI/AAAAAAAAHek/GHl6t7s64YsG22maq0nGBj97EESwLYhXgCK4BGAYYCw/s1600/GD.png");}
-            .t-icon.Torrent {background-image: url("https://2.bp.blogspot.com/-MNPE-vL6sMI/V_XCynnI34I/AAAAAAAAGlw/9Fu3jLAJHNcMyQA3rh98mmss08PrNhqZQCK4B/s1600/TORRENT.png");}
-            .t-icon.Android {background-image: url("https://4.bp.blogspot.com/-JuFIz4_pIqA/Xbdpi8TH0II/AAAAAAAAHfI/LzVxF9UuNJwtdq0fG2WWZCqp6evZ111EwCK4BGAYYCw/s1600/android.png");}
+            .t-icon.Mega {background-position: -55px -240px;}
+            .t-icon.Mediafire {background-position: -91px -239px;}
+            .t-icon.GD {background-position: -17px -240px;}
+            .t-icon.Torrent {background-position: -72px -239px;}
+            .t-icon.Android {background-position: -1px -240px;}
 
-            .t-icon.Libros {background-image: url("https://4.bp.blogspot.com/-x9Nd4wtlJSY/V_w47fxQqgI/AAAAAAAAH0A/XyzbkXfnkLcqG0gJ6KUJ8PXCCaqci2JtwCK4B/s1600/LIBROS.png");}
-            .t-icon.Tutorial {background-image: url("https://4.bp.blogspot.com/-x9Nd4wtlJSY/V_w47fxQqgI/AAAAAAAAH0A/XyzbkXfnkLcqG0gJ6KUJ8PXCCaqci2JtwCK4B/s1600/LIBROS.png");}
-            .t-icon.Programas {background-image: url("https://3.bp.blogspot.com/-GcLh59_qEtw/V_w4s8TFfoI/AAAAAAAAHzQ/RDgX-ij8EHoVJ8dtG66JaLQyLi64HC-aQCK4B/s1600/PROGRAMAS.png");}
-            .t-icon.Juegos {background-image: url("https://2.bp.blogspot.com/-mbyCXFsHADk/V_w4r9OYoHI/AAAAAAAAHyo/0D6spoEkM7wK9RdbCMmbELECSh4787cZwCK4B/s1600/JUEGOS.png");}
-            .t-icon.Anime {background-position: -102px -17px;}
-            .t-icon.Musica {background-image: url("https://3.bp.blogspot.com/-3hB2WiLWW1g/V_w4tEU8f4I/AAAAAAAAHzs/oYFLv7lEusMmiVz7CUrp_MRYlH-WNmOlwCK4B/s1600/MUSICA.png");}
-            .t-icon.ISO {background-image: url("https://1.bp.blogspot.com/-C8dsFvUN68Y/V_7QIETo72I/AAAAAAAAH2E/wNW99yT8_24sH_zcrgKAMFK6lxOs14aLwCK4B/s1600/ISO.png");}
+            .t-icon.Libros {background-position: -155px 0;}
+            .t-icon.Tutorial {background-position: 0 -17px;}
+            .t-icon.Programas {background-position: -137px -1px;}
+            .t-icon.Juegos {background-position: -34px -17px;}
+            .t-icon.Anime {background-position: -103px -17px;}
+            .t-icon.Musica {background-position: -137px -175px;}
+            .t-icon.ISO {background-position: -37px -239px;}
 
             .t-icon.Animaciones {background-position: 0 0;}
             .t-icon.Apuntes {background-position: -17px 0;}
@@ -383,7 +389,7 @@
             .t-icon.zz-salud-bienestar {background-position: -255px -17px;}
             .t-icon.zz-solidaridad {background-position: 0 -34px;}
             .t-icon.zz-turismo {background-position: -34px -34px;}
-            .t-icon.Peliculas {background-position: -68px -34px;}
+            .t-icon.Peliculas {background-position: -68px -35px;}
 
             .contenedor {
                 background-color: #fff;
@@ -805,16 +811,6 @@
                 padding-bottom: 4px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-            }
-
-            .icon.user.blog-author {
-                background: url(https://lh5.googleusercontent.com/-RIgUe2SETO4/UISRPkR-KyI/AAAAAAAADZo/n92aOacQnZk/h120/etiqueta-m.png) no-repeat scroll 0 0 transparent;
-                height: 33px !important;
-                float: right;
-                position: absolute;
-                right: 5px;
-                top: 5px;
-                width: 63px !important;
             }
 
             /*=======================================================
@@ -1673,30 +1669,29 @@
             }
 
             /**********/
-            ul.t-item.search > li {
+            ul.t-item > li {
                 background-color: #fff;
                 border-bottom: 1px dotted #ccc;
                 border-top: 0 none;
                 padding: 10px;
             }
 
-            ul.t-item.search > li:hover {
+            ul.t-item > li:hover {
                 background-color: #f7f7f7;
                 border-bottom: 1px dotted #999;
             }
 
-            ul.t-item.search h2 {
+            ul.t-item h2 {
                 font-size: 14px;
             }
-            ul.t-item.search p {
+            ul.t-item p {
                 color: #999;
                 display: block;
                 font-size: 11px;
                 padding-top: 1px;
                 text-transform: capitalize;
             }
-            /* ul.t-item.search .s-comment { */
-            .s-comment {
+            ul.t-item.search .s-comment {
                 color: #bbb;
                 font-size: 11px;
                 position: absolute;
@@ -1704,8 +1699,7 @@
                 text-align: right;
                 top: 10px;
             }
-            /* ul.t-item.search .s-comment > span { */
-            .s-comment > span {
+            ul.t-item.search .s-comment > span {
                 color: #aaa;
                 display: block;
                 font-size: 16px;
@@ -1990,7 +1984,7 @@
                                                     </h2>
                                                 </div>
 
-                                                <ul class="t-item">
+                                                <ul class="t-item search">
                                                     <b:loop values="data:posts" var="post">
                                                         <b:include data="post" name="post" />
                                                     </b:loop>
@@ -2143,20 +2137,20 @@
 
                                             <!-- Estadisticas -->
                                             <!-- <div class='t-box'>
-                <div class='t-title-box'>
-                  <h2> <i aria-hidden='true' class='fa fa-pie-chart'/> Estadísticas</h2>
-                </div>
-                <div class='t-content'>
-                    <ul class='stats-data'>
-                      <li><span><script type='text/javascript'>diasonline()</script> </span>Dias online</li>
-                      <li><span><script expr:src='data:blog.homepageUrl + &quot;feeds/posts/default?alt=json-in-script&amp;amp;callback=mbhTotalCount&quot;'/></span>Entradas</li>
-                        <li class='data-last'><span><script expr:src='data:blog.homepageUrl + &quot;feeds/comments/default?alt=json-in-script&amp;amp;callback=mbhTotalCount&quot;'/></span>Comentarios</li>
-                    </ul>
-                </div>
-                <div class='more'>
-                    <a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;'>Ver feeds</a>
-                </div>
-            </div> -->
+                                            <div class='t-title-box'>
+                                            <h2> <i aria-hidden='true' class='fa fa-pie-chart'/> Estadísticas</h2>
+                                            </div>
+                                            <div class='t-content'>
+                                                <ul class='stats-data'>
+                                                <li><span><script type='text/javascript'>diasonline()</script> </span>Dias online</li>
+                                                <li><span><script expr:src='data:blog.homepageUrl + &quot;feeds/posts/default?alt=json-in-script&amp;amp;callback=mbhTotalCount&quot;'/></span>Entradas</li>
+                                                    <li class='data-last'><span><script expr:src='data:blog.homepageUrl + &quot;feeds/comments/default?alt=json-in-script&amp;amp;callback=mbhTotalCount&quot;'/></span>Comentarios</li>
+                                                </ul>
+                                            </div>
+                                            <div class='more'>
+                                                <a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;'>Ver feeds</a>
+                                            </div>
+                                            </div> -->
 
                                             <!-- Paginas Amigas (afiliados)-->
                                             <div class="t-box">
@@ -2361,9 +2355,7 @@
                                 </b:if>
                                 <data:post.cmtfpIframe />
                                 <script type="text/javascript">
-                                    BLOG_CMT_createIframe(&#39;
-                                    <data:post.appRpcRelayPath />
-                                    &#39;);
+                                    BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath />&#39;);
                                 </script>
                             </div>
                         </b:includable>
@@ -2797,34 +2789,96 @@
                                     </h2>
                                 </li> -->
 
-                                    <li>
-                                        <h2>
-                                            <a expr:href="data:s.url" expr:title="data:s.title">
-                                                <data:post.title />
-                                            </a>
-                                        </h2>
-                                        <p>
-                                            <data:post.timestamp />
-                                            - Por
-                                            <a expr:href="data:s.authorProfileUrl" expr:title="data:s.author">
-                                                <data:post.author />
-                                            </a>
-                                        </p>
-                                        <div class="s-comment">
-                                            <span>
-                                                <data:post.numComments />
-                                            </span>
-                                            Comentarios
-                                            <br/>
+                                <li>
+                                    <b:loop values="data:post.labels" var="label">
+                                        <b:if cond="data:label.name == &quot;Mega&quot;">
+                                            <i class="t-icon Mega" expr:title="data:label.name" />
+                                        </b:if>
 
-                                            <!-- <b:loop values="data:post.labels" var="label">
-                                                <b:if cond="data:label.isLast == &quot;true&quot;">
-                                                    <i expr:class="&quot;t-icon &quot; + data:label.name" expr:title="data:label.name" />
+                                        <b:if cond="data:label.name == &quot;Mediafire&quot;">
+                                            <i class="t-icon Mediafire" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Torrent&quot;">
+                                            <i class="t-icon Torrent" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;GD&quot;">
+                                            <i class="t-icon GD" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Android&quot;">
+                                            <i class="t-icon Android" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;ISO&quot;">
+                                            <i class="t-icon ISO" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Apple&quot; or data:label.name == &quot;iPhone&quot;">
+                                            <i class="t-icon Apple" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Musica&quot; or data:label.name == &quot;Album&quot;">
+                                            <i class="t-icon Musica" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Programas&quot; or data:label.name == &quot;Activadores&quot;">
+                                            <i class="t-icon Programas" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Juegos&quot; or data:label.name == &quot;Emuladores&quot;">
+                                            <i class="t-icon Juegos" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Anime&quot; or data:label.name == &quot;Manga&quot;">
+                                            <i class="t-icon Anime" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Libros&quot; or data:label.name == &quot;Tutorial&quot;">
+                                            <i class="t-icon Libros" expr:title="data:label.name" />
+                                        </b:if>
+
+                                        <b:if cond="data:label.name == &quot;Peliculas&quot; or data:label.name == &quot;Video&quot;">
+                                            <i class="t-icon Peliculas" expr:title="data:label.name" />
+                                        </b:if>
+                                    </b:loop>
+
+                                    <h2>
+                                        <a expr:href="data:post.url" expr:title="data:post.title">
+                                            <data:post.title />
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        <data:post.timestamp />
+                                        - Por
+                                        <a expr:href="data:post.authorProfileUrl" expr:title="data:post.author">
+                                            <data:post.author />
+                                        </a>
+                                        - <span style="color: #fa3c76">Comentarios: <data:post.numComments /></span>
+                                    </p>
+
+                                    <!-- <div class="tag">
+                                        <b:loop values="data:post.labels" var="label">
+                                            <b:if cond="data:label.isLast != &quot;true&quot;">
+                                                <b:if cond="data:label.name == &quot;sticky&quot;">
+                                                    <b:else />
+                                                    <a expr:href="data:label.url" rel="tag" style="text-transform: uppercase; color: #616064e6; font-size: 10px;">
+                                                        <data:label.name />,
+                                                    </a>
                                                 </b:if>
-                                            </b:loop> -->
-                                        </div>
+                                            </b:if>
+                                        </b:loop>
+                                        <div class="clear" />
+                                    </div> -->
+                                    <!-- <div class="s-comment">
+                                        <span>
+                                            <data:post.numComments />
+                                        </span>
+                                        Comentarios
+                                    </div> -->
 
-                                    </li>
+                                </li>
                             </b:if>
 
                             <!--Entradas post-->
@@ -2876,13 +2930,7 @@
                                         snippet: 0,
                                         imgSize: &#39;s256-c&#39;,
                                         container: document.getElementById(&#39;wjs-related&#39;),
-                                        tags: [
-                                            <b:loop values="data:post.labels where (l =&gt; l.name != &quot;Mediafire&quot;)" var="label">
-                                                &#39;
-                                                <data:label.name />
-                                                &#39;,
-                                            </b:loop>
-                                        ]
+                                        tags: [<b:loop values="data:post.labels where (l =&gt; l.name != &quot;Mediafire&quot;)" var="label">&#39;<data:label.name />&#39;,</b:loop>]
                                     };
 
                                     //<![CDATA[
@@ -3013,11 +3061,7 @@
                                 <data:post.friendConnectJs />
                                 <data:post.cmtfpIframe />
                                 <script type="text/javascript">
-                                    BLOG_CMT_createIframe(&#39;
-                                    <data:post.appRpcRelayPath />
-                                    &#39;, &#39;
-                                    <data:post.communityId />
-                                    &#39;);
+                                    BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath />&#39;, &#39;<data:post.communityId />&#39;);
                                 </script>
                             </div>
                         </b:includable>
@@ -3425,7 +3469,8 @@
         </footer> <!-- Fin footer -->
 
         <!-- JQuery 1.10.2 // relevante para la plantilla: No remover -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
         <!-- Fin JQuery -->
 
         <!--Engine-->
@@ -3482,14 +3527,14 @@
                             var name = data.feed.entry[i].author[0].name.$t;
                             
                             if(name == admin1 || name == admin2){
-                            html += '<li><span style="color: #00C853; font-weight: bold;"><i class="fa fa-code" aria-hidden="true"></i> '+name+':</span><a href="'+url+'" style=""> '+comment+'</a></li>';
+                                html += '<li style="padding: 5px;"><span style="color: #00C853; font-weight: bold;"><i class="fa fa-code" aria-hidden="true"></i> '+name+':</span><a href="'+url+'" style=""> '+comment+'</a></li>';
                             }else if(isDeleted.name === "blogger.contentRemoved" && isDeleted.value === "true"){
-                            html += '<li><span style="text-decoration: line-through; color: #F57F17;">'+name+': '+comment+'</span></li>';
+                                html += '<li style="padding: 5px;"><span style="text-decoration: line-through; color: #F57F17;">'+name+': '+comment+'</span></li>';
                             }else if(comment == down_link){
-                                html += '<li><span style="color: #ef5350; font-weight: bold;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> BROKEN LINK: <a href="' + url + '">' + url + '</a></span></li>';
+                                html += '<li style="padding: 5px;"><span style="color: #ef5350; font-weight: bold;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> BROKEN LINK: <a href="' + url + '">' + url + '</a></span></li>';
                             }
                             else{
-                                html+='<li><span>'+name+':</span><a href='+url+' style=""> '+comment+'</a></li>';
+                                html+='<li style="padding: 5px;"><span>'+name+':</span><a href='+url+' style=""> '+comment+'</a></li>';
                             }
                         }
                         html += '</ul>';
